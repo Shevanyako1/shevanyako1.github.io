@@ -618,6 +618,7 @@ form span {
 .comments-form{margin-left: 150px;}
 }
 @media screen and (max-device-width: 320px){
+    .container{margin-left: 0px;}
     .main-info{min-height: 1165px}
     .main-info-group, .main-info-order{display: block;}
 .glyphicon-chevron-up{display: block;margin-left: 46%;}
@@ -635,3 +636,6 @@ form span {
     .main-info-order{margin-left: -10px;}
     .poka-hz{padding: 0;margin-left: 40%;margin-top: -70%;}
     .main-info-order-order{margin-left: 45%;margin-top: 100px;}
+    .main-menu-items{flex-direction: column;}
+    .main-menu-item{width: 38%;margin-left: 31.8%;}
+    .all-menu{margin-right: 40%;}
