@@ -6,33 +6,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="normalize.css/normalize.css">
+	<link rel="stylesheet" href="martinaglv-touchTouch-406e98c/assets/touchTouch/touchTouch.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	
 </head>   
-<body><p><a name="top"></a></p>
+<body>
+
+	
+	<p><a name="top"></a></p>
 	<div class="container">
 		<header class="header">
 			<section class="top-bar" name="top">
 
 				<ul class="list-social">
-					<li class="list-item-social"><a href=""><img class="icon-vk" src="img/icon/25684.svg" alt="Vk"></a></li>
-					<li class="list-item-social"><a href=""><img src="img/icon/06-facebook-512.png" alt="Facebook"></a></li>
-					<li class="list-item-social"><a href=""><img src="img/icon/Social-Networks-Twitter-icon.png" alt="Twitter"></a></li>
-					<li class="list-item-social"><form action="search"><input type="search" class="top-bar-search" id="search" value="Поиск"><button class="top-bar-search-ico" type="submit"><i class="glyphicon glyphicon-search"></i></button></form></li>
+					<li class="list-item-social"><a href=""><img class="icon-vk" src="img/icon/vk.png" alt="Vk"></a></li>
+					<li class="list-item-social"><a href=""><img src="img/icon/fb.png" alt="Facebook"></a></li>
+					<li class="list-item-social"><a href=""><img src="img/icon/tw.png" alt="Twitter"></a></li>
 				</ul>
+
+				<form action="search"><input type="search" class="top-bar-search" id="search" value="Поиск"><button class="top-bar-search-ico" type="submit"><i class="glyphicon glyphicon-search"></i></button></form>
 
 				<div class="top-bar-logo">
 					<div class="in-top-bar-logo">
-						<a href=""><span>Hot &amp; Fresh</span>
-						<img class="logo" src="img/222.png" alt="">
-						<p>Italian Pizza</p></a>
+						<a href="#">
+						<img src="img/hot&fr+logo.png" alt="Hot & Fresh" style="margin-left: 2px;">
+						<img class="logo" src="img/logo.png" alt="Hot & Fresh">
+						<img src="img/itt_pizz_logo.png" alt="Hot & Fresh" class="logo-pizza">
+						</a>
 					</div>
 				</div>
 
 			</section>
+				<div class="heading">
+				<div class="heading-box">
+					<h1>Hot & Fresh</h1>
+					<h2>Italian Pizza</h2>
+				</div>
+			</div>
+				<div class="open-menu menuOpen">
+					<button class="btn-open-menu">Меню<span class="glyphicon glyphicon-chevron-down"></span></button>
+					<button class="btn-close-menu">Закрыть<span class="glyphicon glyphicon-chevron-up"></span></button>
+				</div>
 
-			<nav class="header-menu">
+			<nav class="header-menu header-menu-off">
 				<ul class="header-menu-list">
 					<li class="header-menu-list-item"><a href="#">Главная</a></li>
 					<li class="header-menu-list-item"><a href="#speshil">Акции</a></li>
@@ -43,12 +61,7 @@
 				</ul>
 			</nav>
 
-			<div class="heading">
-				<div class="heading-box">
-					<h1>Hot & Fresh</h1>
-					<h2>Italian Pizza</h2>
-				</div>
-			</div>
+			
 				
 		</header>
 
@@ -62,13 +75,13 @@
 				
 			<div class="main-info-order">
 				<div class="poka-hz">
-					<h3>Hot &amp; Fresh Italian Pizza - это возможность побывать в Италии , не покидая своей страны!</h3><hr><h3>Самые вкусные рецепты, самые лучшие повара и самые свежие ингридиенты!</h3>
+					<h3>Hot &amp; Fresh Italian Pizza - это возможность побывать в Италии, не покидая своей страны!</h3><hr><h3>Самые вкусные рецепты, самые лучшие повара и самые свежие ингридиенты!</h3>
 				</div>
 				<div class="main-info-order-order">
 					<form action="order" class="main-info-form" id="takeOrder">
 						<input type="text" placeholder="Ваше имя"><br>
 						<input type="text" placeholder="Номер телефона"><br>
-						<submit class="btn" value="submit">Заказать</submit>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Заказать</button>	
 					</form>
 				</div>
 			</div>
@@ -89,11 +102,12 @@
 				<div class="gallery-head">
 					<span class="head-1">Hot</span><span>&amp;</span><span class="head-2">Fresh</span><br><span>Italian Pizza</span>	
 				</div>
-				<div class="right">
-				<div class="gallery-img"><a href=""><img src="img/img-gallery/1.gif" alt=""></a></div>
-				<div class="gallery-img"><a href=""><img src="img/img-gallery/2.gif" alt=""></a></div>
-				<div class="gallery-img"><a href=""><img src="img/img-gallery/3.gif" alt=""></a></div>
-				<div class="gallery-img"><a href=""><img src="img/img-gallery/4.gif" alt=""></a></div>
+				
+				<div class="gallery" id="thumbs">
+					<a href="img/img-gallery/1.gif"><img src="img/img-gallery/1.gif" alt=""></a>
+					<a href="img/img-gallery/2.gif"><img src="img/img-gallery/2.gif" alt=""></a>
+					<a href="img/img-gallery/3.gif"><img src="img/img-gallery/3.gif" alt=""></a>
+					<a href="img/img-gallery/4.gif"><img src="img/img-gallery/4.gif" alt=""></a>
 				</div>
 
 				<section class="gallery-section gallery-section-1">
@@ -201,9 +215,9 @@
 					<div class="footer-block footer-soc">
 						<h5>Присоеденяйтесь к нам</h5>
 						<ul class="footer-list-social">
-					<li class="footer-list-item-social"><a href=""><img class="icon-vk" src="img/icon/25684.svg" alt="Vk"></a></li>
-					<li class="footer-list-item-social"><a href=""><img src="img/icon/06-facebook-512.png" alt="Facebook"></a></li>
-					<li class="footer-list-item-social"><a href=""><img src="img/icon/Social-Networks-Twitter-icon.png" alt="Twitter"></a></li>
+					<li class="footer-list-item-social"><a href=""><img class="icon-vk" src="img/icon/vk.png" alt="Vk"></a></li>
+					<li class="footer-list-item-social"><a href=""><img src="img/icon/fb.png" alt="Facebook"></a></li>
+					<li class="footer-list-item-social"><a href=""><img src="img/icon/tw.png" alt="Twitter"></a></li>
 					</ul>
 					<a href="#" charset="a-app">App Store</a><br><br>
 					<a href="#" class="a-hot">Hot&fresh</a>
@@ -227,7 +241,29 @@
             <div class="force-overflow"></div>
         </div> 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="martinaglv-touchTouch-406e98c/assets/touchTouch/touchTouch.jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Благодарим за заказ!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Наши операторы свяжутся с Вами в ближайшее время!<br>Спасибо, что выбрали "Hot & Fresh"!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
