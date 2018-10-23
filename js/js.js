@@ -35,8 +35,5 @@ $("body").on("click",".btn-close-menu", function (){
 });
 
 $(function(){
-	
-    // Initialize the gallery
     $('#thumbs a').touchTouch();
-
 });
